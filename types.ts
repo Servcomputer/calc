@@ -1,5 +1,5 @@
 
-export type CalculatorMode = 'standard' | 'scientific' | 'ai';
+export type CalculatorMode = 'standard' | 'scientific';
 
 export interface HistoryItem {
   id: string;

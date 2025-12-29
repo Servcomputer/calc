@@ -4,11 +4,9 @@ import React from 'react';
 interface DisplayProps {
   expression: string;
   result: string;
-  isAI?: boolean;
-  explanation?: string;
 }
 
-const Display: React.FC<DisplayProps> = ({ expression, result, isAI, explanation }) => {
+const Display: React.FC<DisplayProps> = ({ expression, result }) => {
   return (
     <div className="w-full p-6 bg-slate-900/50 backdrop-blur-md rounded-t-3xl border-b border-slate-800 flex flex-col justify-end items-end min-h-[160px] gap-2 transition-all">
       <div className="w-full text-right overflow-x-auto no-scrollbar">
@@ -21,13 +19,6 @@ const Display: React.FC<DisplayProps> = ({ expression, result, isAI, explanation
           {result || '0'}
         </span>
       </div>
-      {isAI && explanation && (
-        <div className="w-full mt-2 p-3 bg-indigo-500/10 border border-indigo-500/20 rounded-xl">
-          <p className="text-indigo-300 text-xs leading-relaxed italic">
-            AI: {explanation}
-          </p>
-        </div>
-      )}
     </div>
   );
 };
