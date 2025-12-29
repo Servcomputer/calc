@@ -1,0 +1,5 @@
+{
+  "name": "OmniCalc Pro",
+  "description": "A comprehensive scientific calculator with natural language processing powered by Gemini, history tracking, and advanced mathematical function support.",
+  "requestFramePermissions": []
+}
